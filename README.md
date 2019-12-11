@@ -1,2 +1,2 @@
 # iOSBluetoothDemo
- iOS Bluetooth Project Demo
+iOS Bluetooth project demonstrate Ambiq Bluetooth Data Protocol. It could act either as Client or Server.    
