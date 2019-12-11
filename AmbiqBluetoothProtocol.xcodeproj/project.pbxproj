@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F346B0523832B3300E7058A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B0423832B3300E7058A /* AppDelegate.swift */; };
+		2F346B0723832B3300E7058A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B0623832B3300E7058A /* SceneDelegate.swift */; };
+		2F346B0923832B3300E7058A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B0823832B3300E7058A /* ViewController.swift */; };
+		2F346B0E23832B3800E7058A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F346B0D23832B3800E7058A /* Assets.xcassets */; };
+		2F346B1123832B3800E7058A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F346B0F23832B3800E7058A /* LaunchScreen.storyboard */; };
+		2F346B39238361F200E7058A /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B38238361F200E7058A /* TitleView.swift */; };
+		2F346B3B2383651600E7058A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B3A2383651600E7058A /* Common.swift */; };
+		2F346B3D23849A8F00E7058A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B3C23849A8F00E7058A /* MenuView.swift */; };
+		2F346B3F2384EB0300E7058A /* clientTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B3E2384EB0300E7058A /* clientTableCell.swift */; };
+		2F346B4123862DA600E7058A /* ClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B4023862DA600E7058A /* ClientDelegate.swift */; };
+		2F346B4323862E5D00E7058A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B4223862E5D00E7058A /* Client.swift */; };
+		2F346B4523862EF600E7058A /* ViewController+ClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B4423862EF600E7058A /* ViewController+ClientDelegate.swift */; };
+		2F346B48238632BA00E7058A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F346B47238632BA00E7058A /* CoreBluetooth.framework */; };
+		2F346B4A2387407500E7058A /* PeripheralData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B492387407500E7058A /* PeripheralData.swift */; };
+		2F346B4C2387752200E7058A /* PeripheralDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B4B2387752100E7058A /* PeripheralDevice.swift */; };
+		2F346B502387A02700E7058A /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B4F2387A02700E7058A /* Array.swift */; };
+		2F346B522387D06300E7058A /* CentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B512387D06300E7058A /* CentralManagerDelegate.swift */; };
+		2F346B542387D32800E7058A /* ViewController+CMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B532387D32800E7058A /* ViewController+CMDelegate.swift */; };
+		2F346B5623889DF200E7058A /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B5523889DF200E7058A /* ConnectView.swift */; };
+		2F346B582389EF8700E7058A /* Client+Central.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B572389EF8700E7058A /* Client+Central.swift */; };
+		2F346B5E238A460F00E7058A /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B5D238A460F00E7058A /* ServiceViewController.swift */; };
+		2F346B60238B187200E7058A /* ServiceTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B5F238B187200E7058A /* ServiceTitleView.swift */; };
+		2F346B62238B194600E7058A /* ServiceDelgate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B61238B194600E7058A /* ServiceDelgate.swift */; };
+		2F346B64238B19CE00E7058A /* ViewController+ServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B63238B19CE00E7058A /* ViewController+ServiceDelegate.swift */; };
+		2F346B68238C62C300E7058A /* ServiceTitleViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B67238C62C300E7058A /* ServiceTitleViewDelegate.swift */; };
+		2F346B6A238C779300E7058A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346B69238C779300E7058A /* Notification.swift */; };
+		2F366C50238CBECB00EC0F00 /* CharacteristicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C4F238CBECB00EC0F00 /* CharacteristicController.swift */; };
+		2F366C52238CC2D700EC0F00 /* CharacteristicTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C51238CC2D700EC0F00 /* CharacteristicTitleView.swift */; };
+		2F366C54238CC6DA00EC0F00 /* CharacteristicTitleViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C53238CC6DA00EC0F00 /* CharacteristicTitleViewDelegate.swift */; };
+		2F366C56238D967E00EC0F00 /* CharacteristicDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C55238D967E00EC0F00 /* CharacteristicDelegate.swift */; };
+		2F366C5A238DF29700EC0F00 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C59238DF29700EC0F00 /* PeripheralViewController.swift */; };
+		2F366C5E238E231B00EC0F00 /* AmbiqService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C5D238E231B00EC0F00 /* AmbiqService.swift */; };
+		2F366C60238F01E800EC0F00 /* PeripheralViewController+Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C5F238F01E800EC0F00 /* PeripheralViewController+Peripheral.swift */; };
+		2F366C62238F28C400EC0F00 /* MenuViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C61238F28C300EC0F00 /* MenuViewDelegate.swift */; };
+		2F366C642392053000EC0F00 /* AmbiqTxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C632392053000EC0F00 /* AmbiqTxController.swift */; };
+		2F366C66239300A800EC0F00 /* AmbiqRxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C65239300A800EC0F00 /* AmbiqRxController.swift */; };
+		2F366C682393387300EC0F00 /* PacketClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C672393387200EC0F00 /* PacketClass.swift */; };
+		2F366C6A2393708E00EC0F00 /* CRC32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C692393708E00EC0F00 /* CRC32.swift */; };
+		2F366C6C2395E25A00EC0F00 /* LogDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C6B2395E25A00EC0F00 /* LogDelegate.swift */; };
+		2F366C6E2395F4DA00EC0F00 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C6D2395F4D900EC0F00 /* String.swift */; };
+		2F366C702396002F00EC0F00 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F366C6F2396002F00EC0F00 /* LogViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F346B1823832B3900E7058A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F346AF923832B3300E7058A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F346B0023832B3300E7058A;
+			remoteInfo = AmbiqBluetoothProtocol;
+		};
+		2F346B2323832B3900E7058A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F346AF923832B3300E7058A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F346B0023832B3300E7058A;
+			remoteInfo = AmbiqBluetoothProtocol;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F346B0123832B3300E7058A /* AmbiqBluetoothProtocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmbiqBluetoothProtocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F346B0423832B3300E7058A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F346B0623832B3300E7058A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F346B0823832B3300E7058A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F346B0D23832B3800E7058A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F346B1023832B3800E7058A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F346B1223832B3800E7058A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F346B1723832B3900E7058A /* AmbiqBluetoothProtocolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmbiqBluetoothProtocolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F346B2223832B3900E7058A /* AmbiqBluetoothProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmbiqBluetoothProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F346B38238361F200E7058A /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		2F346B3A2383651600E7058A /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		2F346B3C23849A8F00E7058A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		2F346B3E2384EB0300E7058A /* clientTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clientTableCell.swift; sourceTree = "<group>"; };
+		2F346B4023862DA600E7058A /* ClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDelegate.swift; sourceTree = "<group>"; };
+		2F346B4223862E5D00E7058A /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		2F346B4423862EF600E7058A /* ViewController+ClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ClientDelegate.swift"; sourceTree = "<group>"; };
+		2F346B47238632BA00E7058A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2F346B492387407500E7058A /* PeripheralData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralData.swift; sourceTree = "<group>"; };
+		2F346B4B2387752100E7058A /* PeripheralDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralDevice.swift; sourceTree = "<group>"; };
+		2F346B4F2387A02700E7058A /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		2F346B512387D06300E7058A /* CentralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralManagerDelegate.swift; sourceTree = "<group>"; };
+		2F346B532387D32800E7058A /* ViewController+CMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CMDelegate.swift"; sourceTree = "<group>"; };
+		2F346B5523889DF200E7058A /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		2F346B572389EF8700E7058A /* Client+Central.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+Central.swift"; sourceTree = "<group>"; };
+		2F346B5D238A460F00E7058A /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		2F346B5F238B187200E7058A /* ServiceTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTitleView.swift; sourceTree = "<group>"; };
+		2F346B61238B194600E7058A /* ServiceDelgate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDelgate.swift; sourceTree = "<group>"; };
+		2F346B63238B19CE00E7058A /* ViewController+ServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ServiceDelegate.swift"; sourceTree = "<group>"; };
+		2F346B67238C62C300E7058A /* ServiceTitleViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTitleViewDelegate.swift; sourceTree = "<group>"; };
+		2F346B69238C779300E7058A /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2F366C4F238CBECB00EC0F00 /* CharacteristicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicController.swift; sourceTree = "<group>"; };
+		2F366C51238CC2D700EC0F00 /* CharacteristicTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicTitleView.swift; sourceTree = "<group>"; };
+		2F366C53238CC6DA00EC0F00 /* CharacteristicTitleViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicTitleViewDelegate.swift; sourceTree = "<group>"; };
+		2F366C55238D967E00EC0F00 /* CharacteristicDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicDelegate.swift; sourceTree = "<group>"; };
+		2F366C59238DF29700EC0F00 /* PeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
+		2F366C5D238E231B00EC0F00 /* AmbiqService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbiqService.swift; sourceTree = "<group>"; };
+		2F366C5F238F01E800EC0F00 /* PeripheralViewController+Peripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeripheralViewController+Peripheral.swift"; sourceTree = "<group>"; };
+		2F366C61238F28C300EC0F00 /* MenuViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewDelegate.swift; sourceTree = "<group>"; };
+		2F366C632392053000EC0F00 /* AmbiqTxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbiqTxController.swift; sourceTree = "<group>"; };
+		2F366C65239300A800EC0F00 /* AmbiqRxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbiqRxController.swift; sourceTree = "<group>"; };
+		2F366C672393387200EC0F00 /* PacketClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketClass.swift; sourceTree = "<group>"; };
+		2F366C692393708E00EC0F00 /* CRC32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRC32.swift; sourceTree = "<group>"; };
+		2F366C6B2395E25A00EC0F00 /* LogDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDelegate.swift; sourceTree = "<group>"; };
+		2F366C6D2395F4D900EC0F00 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		2F366C6F2396002F00EC0F00 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F346AFE23832B3300E7058A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F346B48238632BA00E7058A /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F346B1423832B3900E7058A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F346B1F23832B3900E7058A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F346AF823832B3300E7058A = {
+			isa = PBXGroup;
+			children = (
+				2F346B0323832B3300E7058A /* AmbiqBluetoothProtocol */,
+				2F346B0223832B3300E7058A /* Products */,
+				2F346B46238632BA00E7058A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F346B0223832B3300E7058A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F346B0123832B3300E7058A /* AmbiqBluetoothProtocol.app */,
+				2F346B1723832B3900E7058A /* AmbiqBluetoothProtocolTests.xctest */,
+				2F346B2223832B3900E7058A /* AmbiqBluetoothProtocolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F346B0323832B3300E7058A /* AmbiqBluetoothProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				2FB325C723A18F72008C3C0F /* module */,
+				2FB325C623A18F30008C3C0F /* UI */,
+				2FB325C523A18E70008C3C0F /* delegate */,
+				2FB325C423A18E48008C3C0F /* extenstion */,
+				2F346B0D23832B3800E7058A /* Assets.xcassets */,
+				2F346B0F23832B3800E7058A /* LaunchScreen.storyboard */,
+				2F346B1223832B3800E7058A /* Info.plist */,
+			);
+			path = AmbiqBluetoothProtocol;
+			sourceTree = "<group>";
+		};
+		2F346B46238632BA00E7058A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F346B47238632BA00E7058A /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FB325C423A18E48008C3C0F /* extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				2F346B69238C779300E7058A /* Notification.swift */,
+				2F346B4F2387A02700E7058A /* Array.swift */,
+				2F366C6D2395F4D900EC0F00 /* String.swift */,
+			);
+			path = extenstion;
+			sourceTree = "<group>";
+		};
+		2FB325C523A18E70008C3C0F /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2F346B0423832B3300E7058A /* AppDelegate.swift */,
+				2F346B0623832B3300E7058A /* SceneDelegate.swift */,
+				2F346B4023862DA600E7058A /* ClientDelegate.swift */,
+				2F346B512387D06300E7058A /* CentralManagerDelegate.swift */,
+				2F346B61238B194600E7058A /* ServiceDelgate.swift */,
+				2F366C55238D967E00EC0F00 /* CharacteristicDelegate.swift */,
+				2F346B67238C62C300E7058A /* ServiceTitleViewDelegate.swift */,
+				2F366C53238CC6DA00EC0F00 /* CharacteristicTitleViewDelegate.swift */,
+				2F366C61238F28C300EC0F00 /* MenuViewDelegate.swift */,
+				2F366C6B2395E25A00EC0F00 /* LogDelegate.swift */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		2FB325C623A18F30008C3C0F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F346B3A2383651600E7058A /* Common.swift */,
+				2F346B3E2384EB0300E7058A /* clientTableCell.swift */,
+				2F346B0823832B3300E7058A /* ViewController.swift */,
+				2F346B4423862EF600E7058A /* ViewController+ClientDelegate.swift */,
+				2F346B532387D32800E7058A /* ViewController+CMDelegate.swift */,
+				2F346B63238B19CE00E7058A /* ViewController+ServiceDelegate.swift */,
+				2F366C59238DF29700EC0F00 /* PeripheralViewController.swift */,
+				2F366C5F238F01E800EC0F00 /* PeripheralViewController+Peripheral.swift */,
+				2F366C6F2396002F00EC0F00 /* LogViewController.swift */,
+				2F366C4F238CBECB00EC0F00 /* CharacteristicController.swift */,
+				2F346B5D238A460F00E7058A /* ServiceViewController.swift */,
+				2F366C65239300A800EC0F00 /* AmbiqRxController.swift */,
+				2F366C632392053000EC0F00 /* AmbiqTxController.swift */,
+				2F346B38238361F200E7058A /* TitleView.swift */,
+				2F346B5F238B187200E7058A /* ServiceTitleView.swift */,
+				2F366C51238CC2D700EC0F00 /* CharacteristicTitleView.swift */,
+				2F346B3C23849A8F00E7058A /* MenuView.swift */,
+				2F346B5523889DF200E7058A /* ConnectView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2FB325C723A18F72008C3C0F /* module */ = {
+			isa = PBXGroup;
+			children = (
+				2F346B492387407500E7058A /* PeripheralData.swift */,
+				2F346B4B2387752100E7058A /* PeripheralDevice.swift */,
+				2F366C672393387200EC0F00 /* PacketClass.swift */,
+				2F366C692393708E00EC0F00 /* CRC32.swift */,
+				2F346B4223862E5D00E7058A /* Client.swift */,
+				2F346B572389EF8700E7058A /* Client+Central.swift */,
+				2F366C5D238E231B00EC0F00 /* AmbiqService.swift */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F346B0023832B3300E7058A /* AmbiqBluetoothProtocol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F346B2B23832B3900E7058A /* Build configuration list for PBXNativeTarget "AmbiqBluetoothProtocol" */;
+			buildPhases = (
+				2F346AFD23832B3300E7058A /* Sources */,
+				2F346AFE23832B3300E7058A /* Frameworks */,
+				2F346AFF23832B3300E7058A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmbiqBluetoothProtocol;
+			productName = AmbiqBluetoothProtocol;
+			productReference = 2F346B0123832B3300E7058A /* AmbiqBluetoothProtocol.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F346B1623832B3900E7058A /* AmbiqBluetoothProtocolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F346B2E23832B3900E7058A /* Build configuration list for PBXNativeTarget "AmbiqBluetoothProtocolTests" */;
+			buildPhases = (
+				2F346B1323832B3900E7058A /* Sources */,
+				2F346B1423832B3900E7058A /* Frameworks */,
+				2F346B1523832B3900E7058A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F346B1923832B3900E7058A /* PBXTargetDependency */,
+			);
+			name = AmbiqBluetoothProtocolTests;
+			productName = AmbiqBluetoothProtocolTests;
+			productReference = 2F346B1723832B3900E7058A /* AmbiqBluetoothProtocolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F346B2123832B3900E7058A /* AmbiqBluetoothProtocolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F346B3123832B3900E7058A /* Build configuration list for PBXNativeTarget "AmbiqBluetoothProtocolUITests" */;
+			buildPhases = (
+				2F346B1E23832B3900E7058A /* Sources */,
+				2F346B1F23832B3900E7058A /* Frameworks */,
+				2F346B2023832B3900E7058A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F346B2423832B3900E7058A /* PBXTargetDependency */,
+			);
+			name = AmbiqBluetoothProtocolUITests;
+			productName = AmbiqBluetoothProtocolUITests;
+			productReference = 2F346B2223832B3900E7058A /* AmbiqBluetoothProtocolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F346AF923832B3300E7058A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = app_dev;
+				TargetAttributes = {
+					2F346B0023832B3300E7058A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					2F346B1623832B3900E7058A = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 2F346B0023832B3300E7058A;
+					};
+					2F346B2123832B3900E7058A = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 2F346B0023832B3300E7058A;
+					};
+				};
+			};
+			buildConfigurationList = 2F346AFC23832B3300E7058A /* Build configuration list for PBXProject "AmbiqBluetoothProtocol" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F346AF823832B3300E7058A;
+			productRefGroup = 2F346B0223832B3300E7058A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F346B0023832B3300E7058A /* AmbiqBluetoothProtocol */,
+				2F346B1623832B3900E7058A /* AmbiqBluetoothProtocolTests */,
+				2F346B2123832B3900E7058A /* AmbiqBluetoothProtocolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F346AFF23832B3300E7058A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F346B1123832B3800E7058A /* LaunchScreen.storyboard in Resources */,
+				2F346B0E23832B3800E7058A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F346B1523832B3900E7058A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F346B2023832B3900E7058A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F346AFD23832B3300E7058A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F346B4C2387752200E7058A /* PeripheralDevice.swift in Sources */,
+				2F366C62238F28C400EC0F00 /* MenuViewDelegate.swift in Sources */,
+				2F346B3D23849A8F00E7058A /* MenuView.swift in Sources */,
+				2F346B3B2383651600E7058A /* Common.swift in Sources */,
+				2F366C642392053000EC0F00 /* AmbiqTxController.swift in Sources */,
+				2F346B4123862DA600E7058A /* ClientDelegate.swift in Sources */,
+				2F346B0923832B3300E7058A /* ViewController.swift in Sources */,
+				2F346B4523862EF600E7058A /* ViewController+ClientDelegate.swift in Sources */,
+				2F366C60238F01E800EC0F00 /* PeripheralViewController+Peripheral.swift in Sources */,
+				2F346B64238B19CE00E7058A /* ViewController+ServiceDelegate.swift in Sources */,
+				2F346B4A2387407500E7058A /* PeripheralData.swift in Sources */,
+				2F366C702396002F00EC0F00 /* LogViewController.swift in Sources */,
+				2F346B0523832B3300E7058A /* AppDelegate.swift in Sources */,
+				2F346B0723832B3300E7058A /* SceneDelegate.swift in Sources */,
+				2F366C5A238DF29700EC0F00 /* PeripheralViewController.swift in Sources */,
+				2F366C682393387300EC0F00 /* PacketClass.swift in Sources */,
+				2F366C52238CC2D700EC0F00 /* CharacteristicTitleView.swift in Sources */,
+				2F366C50238CBECB00EC0F00 /* CharacteristicController.swift in Sources */,
+				2F366C54238CC6DA00EC0F00 /* CharacteristicTitleViewDelegate.swift in Sources */,
+				2F346B62238B194600E7058A /* ServiceDelgate.swift in Sources */,
+				2F366C6A2393708E00EC0F00 /* CRC32.swift in Sources */,
+				2F346B522387D06300E7058A /* CentralManagerDelegate.swift in Sources */,
+				2F346B502387A02700E7058A /* Array.swift in Sources */,
+				2F346B5623889DF200E7058A /* ConnectView.swift in Sources */,
+				2F366C66239300A800EC0F00 /* AmbiqRxController.swift in Sources */,
+				2F346B68238C62C300E7058A /* ServiceTitleViewDelegate.swift in Sources */,
+				2F366C6E2395F4DA00EC0F00 /* String.swift in Sources */,
+				2F346B4323862E5D00E7058A /* Client.swift in Sources */,
+				2F346B39238361F200E7058A /* TitleView.swift in Sources */,
+				2F346B3F2384EB0300E7058A /* clientTableCell.swift in Sources */,
+				2F346B582389EF8700E7058A /* Client+Central.swift in Sources */,
+				2F366C6C2395E25A00EC0F00 /* LogDelegate.swift in Sources */,
+				2F346B6A238C779300E7058A /* Notification.swift in Sources */,
+				2F346B5E238A460F00E7058A /* ServiceViewController.swift in Sources */,
+				2F346B60238B187200E7058A /* ServiceTitleView.swift in Sources */,
+				2F366C5E238E231B00EC0F00 /* AmbiqService.swift in Sources */,
+				2F346B542387D32800E7058A /* ViewController+CMDelegate.swift in Sources */,
+				2F366C56238D967E00EC0F00 /* CharacteristicDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F346B1323832B3900E7058A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F346B1E23832B3900E7058A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F346B1923832B3900E7058A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F346B0023832B3300E7058A /* AmbiqBluetoothProtocol */;
+			targetProxy = 2F346B1823832B3900E7058A /* PBXContainerItemProxy */;
+		};
+		2F346B2423832B3900E7058A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F346B0023832B3300E7058A /* AmbiqBluetoothProtocol */;
+			targetProxy = 2F346B2323832B3900E7058A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F346B0F23832B3800E7058A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F346B1023832B3800E7058A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F346B2923832B3900E7058A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F346B2A23832B3900E7058A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F346B2C23832B3900E7058A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33JWB74XXP;
+				INFOPLIST_FILE = AmbiqBluetoothProtocol/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app-dev.AmbiqBluetoothProtocol";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F346B2D23832B3900E7058A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33JWB74XXP;
+				INFOPLIST_FILE = AmbiqBluetoothProtocol/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app-dev.AmbiqBluetoothProtocol";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F346B2F23832B3900E7058A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33JWB74XXP;
+				INFOPLIST_FILE = AmbiqBluetoothProtocolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app-dev.AmbiqBluetoothProtocolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmbiqBluetoothProtocol.app/AmbiqBluetoothProtocol";
+			};
+			name = Debug;
+		};
+		2F346B3023832B3900E7058A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33JWB74XXP;
+				INFOPLIST_FILE = AmbiqBluetoothProtocolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app-dev.AmbiqBluetoothProtocolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmbiqBluetoothProtocol.app/AmbiqBluetoothProtocol";
+			};
+			name = Release;
+		};
+		2F346B3223832B3900E7058A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33JWB74XXP;
+				INFOPLIST_FILE = AmbiqBluetoothProtocolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app-dev.AmbiqBluetoothProtocolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmbiqBluetoothProtocol;
+			};
+			name = Debug;
+		};
+		2F346B3323832B3900E7058A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33JWB74XXP;
+				INFOPLIST_FILE = AmbiqBluetoothProtocolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app-dev.AmbiqBluetoothProtocolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmbiqBluetoothProtocol;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F346AFC23832B3300E7058A /* Build configuration list for PBXProject "AmbiqBluetoothProtocol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F346B2923832B3900E7058A /* Debug */,
+				2F346B2A23832B3900E7058A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F346B2B23832B3900E7058A /* Build configuration list for PBXNativeTarget "AmbiqBluetoothProtocol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F346B2C23832B3900E7058A /* Debug */,
+				2F346B2D23832B3900E7058A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F346B2E23832B3900E7058A /* Build configuration list for PBXNativeTarget "AmbiqBluetoothProtocolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F346B2F23832B3900E7058A /* Debug */,
+				2F346B3023832B3900E7058A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F346B3123832B3900E7058A /* Build configuration list for PBXNativeTarget "AmbiqBluetoothProtocolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F346B3223832B3900E7058A /* Debug */,
+				2F346B3323832B3900E7058A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F346AF923832B3300E7058A /* Project object */;
+}
